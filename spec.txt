@@ -1,0 +1,11 @@
+pages:
+login
+display profile
+edit profile (form)
+request pto (form)
+display submitted requests (table)
+
+display requests for approval (table)
+display one request for approval
+display emp summary (table)
+
