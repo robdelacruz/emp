@@ -1,11 +1,17 @@
 pages:
 login
-display profile
-edit profile (form)
+display employees (table)
+display employee (edit in place)
 request pto (form)
 display submitted requests (table)
 
 display requests for approval (table)
 display one request for approval
 display emp summary (table)
+
+display employee page:
+- Similar to an index card showing employee details, or a folder containing all details of a person.
+- Able to edit fields in place. Click on field 'Edit' button, an input control appears, then 'Save'.
+- Only admin can edit employee profile.
+
 
