@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Employee Card</title>
+<title>Employee Card (edit in place)</title>
 <link rel="stylesheet" type="text/css" href="bulma.css">
 <style>
 #main {
@@ -21,6 +21,31 @@
 }
 .content .table td {
 /*    padding: 0.3em;*/
+}
+.card-val {
+    position: relative;
+}
+.edit-overlay {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.edit-overlay:hover {
+    opacity: 1.0;
+}
+.edit-overlay a {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+.card-valinput {
+    display: none;
+    width: 80%;
 }
 </style>
 </head>
@@ -56,7 +81,16 @@
                         <tbody>
                             <tr>
                                 <td class="card-label">Emp&nbsp;No</td>
-                                <td>9029-664</td>
+                                <td class="card-val">
+                                    <div class="card-valtext">9029-664</div>
+                                    <div class="card-valinput">
+                                        <input class="input is-small" type="text" value="9029-664">
+                                    </div>
+                                    <div class="edit-overlay">
+                                        <a class="popup-edit-link" href="#">Edit</a>
+                                    </div>
+                                </td>
+                        
                             </tr>
                             <tr>
                                 <td class="card-label">SS&nbsp;No</td>
@@ -161,6 +195,27 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
         </div>
     </div>
 </div>
+<script>
+    document.addEventListener("click", function(e) {
+        if (!e.target.matches(".popup-edit-link")) {
+            return;
+        }
+        let editLink = e.target;
+        let td = e.target.parentNode.parentNode;
+
+        if (editLink.innerText == "Edit") {
+            editLink.innerText = "Done";
+            td.querySelector(".card-valinput").style.display = "block";
+            td.querySelector(".card-valtext").style.display = "none";
+
+            td.querySelector(".card-valinput input").focus();
+        } else {
+            editLink.innerText = "Edit";
+            td.querySelector(".card-valinput").style.display = "none";
+            td.querySelector(".card-valtext").style.display = "block";
+        }
+    });
+</script>
 </body>
 </html>
 
