@@ -25,7 +25,7 @@
 .card-val {
     position: relative;
 }
-.edit-overlay {
+.field-overlay {
     opacity: 0;
     position: absolute;
     width: 100%;
@@ -33,19 +33,22 @@
     left: 0;
     top: 0;
 }
-.edit-overlay:hover {
+.field-overlay:hover {
     opacity: 1.0;
 }
-.edit-overlay a {
+.field-overlay a {
     position: absolute;
     margin: 0;
     top: 50%;
     right: 0;
     transform: translate(-50%, -50%);
 }
-.card-valinput {
+.field-input {
     display: none;
-    width: 80%;
+    width: 100%;
+}
+.field-input .buttons {
+    margin-top: 0.4em;
 }
 </style>
 </head>
@@ -82,44 +85,133 @@
                             <tr>
                                 <td class="card-label">Emp&nbsp;No</td>
                                 <td class="card-val">
-                                    <div class="card-valtext">9029-664</div>
-                                    <div class="card-valinput">
+                                    <div class="field-val">9029-664</div>
+                                    <div class="field-input">
                                         <input class="input is-small" type="text" value="9029-664">
+                                        <div class="buttons is-pulled-right">
+                                            <a class="button is-small is-light field-input-action">Cancel</a>
+                                            <a class="button is-small is-success field-input-action">Update</a>
+                                        </div>
                                     </div>
-                                    <div class="edit-overlay">
-                                        <a class="popup-edit-link" href="#">Edit</a>
+                                    <div class="field-overlay">
+                                        <a class="field-overlay-edit" href="#">Edit</a>
                                     </div>
                                 </td>
                         
                             </tr>
                             <tr>
                                 <td class="card-label">SS&nbsp;No</td>
-                                <td>789-01-2345</td>
+                                <td class="card-val">
+                                    <div class="field-val">789-01-2345</div>
+                                    <div class="field-input">
+                                        <input class="input is-small" type="text" value="789-01-2345">
+                                        <div class="buttons is-pulled-right">
+                                            <a class="button is-small is-light field-input-action">Cancel</a>
+                                            <a class="button is-small is-success field-input-action">Update</a>
+                                        </div>
+                                    </div>
+                                    <div class="field-overlay">
+                                        <a class="field-overlay-edit" href="#">Edit</a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="card-label">TIN</td>
-                                <td>1234567890</td>
+                                <td class="card-val">
+                                    <div class="field-val">1234567890</div>
+                                    <div class="field-input">
+                                        <input class="input is-small" type="text" value="1234567890">
+                                        <div class="buttons is-pulled-right">
+                                            <a class="button is-small is-light field-input-action">Cancel</a>
+                                            <a class="button is-small is-success field-input-action">Update</a>
+                                        </div>
+                                    </div>
+                                    <div class="field-overlay">
+                                        <a class="field-overlay-edit" href="#">Edit</a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="card-label">Title</td>
-                                <td>Intern</td>
+                                <td class="card-val">
+                                    <div class="field-val">Intern</div>
+                                    <div class="field-input">
+                                        <input class="input is-small" type="text" value="Intern">
+                                        <div class="buttons is-pulled-right">
+                                            <a class="button is-small is-light field-input-action">Cancel</a>
+                                            <a class="button is-small is-success field-input-action">Update</a>
+                                        </div>
+                                    </div>
+                                    <div class="field-overlay">
+                                        <a class="field-overlay-edit" href="#">Edit</a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="card-label">Start&nbsp;Date</td>
-                                <td>2017-01-15</td>
+                                <td class="card-val">
+                                    <div class="field-val">2017-01-15</div>
+                                    <div class="field-input">
+                                        <input class="input is-small" type="text" value="2017-01-15">
+                                        <div class="buttons is-pulled-right">
+                                            <a class="button is-small is-light field-input-action">Cancel</a>
+                                            <a class="button is-small is-success field-input-action">Update</a>
+                                        </div>
+                                    </div>
+                                    <div class="field-overlay">
+                                        <a class="field-overlay-edit" href="#">Edit</a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="card-label">Status</td>
-                                <td>Regular</td></tr>
+                                <td class="card-val">
+                                    <div class="field-val">Regular</div>
+                                    <div class="field-input">
+                                        <input class="input is-small" type="text" value="Regular">
+                                        <div class="buttons is-pulled-right">
+                                            <a class="button is-small is-light field-input-action">Cancel</a>
+                                            <a class="button is-small is-success field-input-action">Update</a>
+                                        </div>
+                                    </div>
+                                    <div class="field-overlay">
+                                        <a class="field-overlay-edit" href="#">Edit</a>
+                                    </div>
+                                </td>
+                            </tr>
                             <tr>
                                 <td class="card-label">Division</td>
-                                <td>HR</td>
+                                <td class="card-val">
+                                    <div class="field-val">HR</div>
+                                    <div class="field-input">
+                                        <input class="input is-small" type="text" value="HR">
+                                        <div class="buttons is-pulled-right">
+                                            <a class="button is-small is-light field-input-action">Cancel</a>
+                                            <a class="button is-small is-success field-input-action">Update</a>
+                                        </div>
+                                    </div>
+                                    <div class="field-overlay">
+                                        <a class="field-overlay-edit" href="#">Edit</a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="card-label">Notes</td>
-                                <td>
-                                    <div class="content">
+                                <td class="card-val">
+                                    <div class="field-val content">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor lobortis consectetur nec nec ipsum. Suspendisse vehicula ornare efficitur. Proin nec libero leo. Integer neque metus, pharetra eget augue vitae, pharetra ultrices lacus.
+                                    </div>
+                                    <div class="field-input">
+                                        <textarea class="input textarea is-small" rows="5">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor lobortis consectetur nec nec ipsum. Suspendisse vehicula ornare efficitur. Proin nec libero leo. Integer neque metus, pharetra eget augue vitae, pharetra ultrices lacus.
+                                        </textarea>
+                                        <div class="buttons is-pulled-right">
+                                            <a class="button is-small is-light field-input-action">Cancel</a>
+                                            <a class="button is-small is-success field-input-action">Update</a>
+                                        </div>
+                                    </div>
+                                    <div class="field-overlay">
+                                        <a class="field-overlay-edit" href="#">Edit</a>
                                     </div>
                                 </td>
                             </tr>
@@ -134,15 +226,51 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                         <tbody>
                             <tr>
                                 <td class="card-label">Email</td>
-                                <td><a>robdelacruz@email.com</a></td>
+                                <td class="card-val">
+                                    <div class="field-val"><a>robdelacruz@email.com</a></div>
+                                    <div class="field-input">
+                                        <input class="input is-small" type="text" value="robdelacruz@email.com">
+                                        <div class="buttons is-pulled-right">
+                                            <a class="button is-small is-light field-input-action">Cancel</a>
+                                            <a class="button is-small is-success field-input-action">Update</a>
+                                        </div>
+                                    </div>
+                                    <div class="field-overlay">
+                                        <a class="field-overlay-edit" href="#">Edit</a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="card-label">Work&nbsp;Phone</td>
-                                <td>632-532-2870</td>
+                                <td class="card-val">
+                                    <div class="field-val">632-532-2870</div>
+                                    <div class="field-input">
+                                        <input class="input is-small" type="text" value="632-532-2870632-532-2870">
+                                        <div class="buttons is-pulled-right">
+                                            <a class="button is-small is-light field-input-action">Cancel</a>
+                                            <a class="button is-small is-success field-input-action">Update</a>
+                                        </div>
+                                    </div>
+                                    <div class="field-overlay">
+                                        <a class="field-overlay-edit" href="#">Edit</a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="card-label">Mobile</td>
-                                <td>0917-567-8901</td>
+                                <td class="card-val">
+                                    <div class="field-val">0917-567-8901</div>
+                                    <div class="field-input">
+                                        <input class="input is-small" type="text" value="0917-567-8901">
+                                        <div class="buttons is-pulled-right">
+                                            <a class="button is-small is-light field-input-action">Cancel</a>
+                                            <a class="button is-small is-success field-input-action">Update</a>
+                                        </div>
+                                    </div>
+                                    <div class="field-overlay">
+                                        <a class="field-overlay-edit" href="#">Edit</a>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -155,19 +283,67 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                         <tbody>
                             <tr>
                                 <td class="card-label">Gender</td>
-                                <td>Male</td>
+                                <td class="card-val">
+                                    <div class="field-val">Male</div>
+                                    <div class="field-input">
+                                        <input class="input is-small" type="text" value="Male">
+                                        <div class="buttons is-pulled-right">
+                                            <a class="button is-small is-light field-input-action">Cancel</a>
+                                            <a class="button is-small is-success field-input-action">Update</a>
+                                        </div>
+                                    </div>
+                                    <div class="field-overlay">
+                                        <a class="field-overlay-edit" href="#">Edit</a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="card-label">Civil Status</td>
-                                <td>Single</td>
+                                <td class="card-val">
+                                    <div class="field-val">Single</div>
+                                    <div class="field-input">
+                                        <input class="input is-small" type="text" value="Single">
+                                        <div class="buttons is-pulled-right">
+                                            <a class="button is-small is-light field-input-action">Cancel</a>
+                                            <a class="button is-small is-success field-input-action">Update</a>
+                                        </div>
+                                    </div>
+                                    <div class="field-overlay">
+                                        <a class="field-overlay-edit" href="#">Edit</a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="card-label">Date of Birth</td>
-                                <td>1970-01-01</td>
+                                <td class="card-val">
+                                    <div class="field-val">1970-01-01</div>
+                                    <div class="field-input">
+                                        <input class="input is-small" type="text" value="1970-01-01">
+                                        <div class="buttons is-pulled-right">
+                                            <a class="button is-small is-light field-input-action">Cancel</a>
+                                            <a class="button is-small is-success field-input-action">Update</a>
+                                        </div>
+                                    </div>
+                                    <div class="field-overlay">
+                                        <a class="field-overlay-edit" href="#">Edit</a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="card-label">Favorite Color</td>
-                                <td>Fuchsia</td>
+                                <td class="card-val">
+                                    <div class="field-val">Fuchsia</div>
+                                    <div class="field-input">
+                                        <input class="input is-small" type="text" value="Fuchsia">
+                                        <div class="buttons is-pulled-right">
+                                            <a class="button is-small is-light field-input-action">Cancel</a>
+                                            <a class="button is-small is-success field-input-action">Update</a>
+                                        </div>
+                                    </div>
+                                    <div class="field-overlay">
+                                        <a class="field-overlay-edit" href="#">Edit</a>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -180,11 +356,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                         <tbody>
                             <tr>
                                 <td class="card-label">Remaining SL</td>
-                                <td>15.0 <a href="#" class="is-pulled-right">Request</a></td>
+                                <td class="card-val">
+                                    15.0
+                                    <a href="#" class="is-pulled-right">Request</a>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="card-label">Remaining VL</td>
-                                <td>12.5 <a href="#" class="is-pulled-right">Request</a></td>
+                                <td class="card-val">
+                                    12.5
+                                    <a href="#" class="is-pulled-right">Request</a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -196,24 +378,57 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
     </div>
 </div>
 <script>
+    // Hide any visible in-place editing fields.
+    function hideAllEdits() {
+        let fieldoverlays = document.querySelectorAll(".field-overlay");
+        let fieldvals = document.querySelectorAll(".field-val");
+        let fieldinputs = document.querySelectorAll(".field-input");
+
+        for (let i=0; i < fieldoverlays.length; i++) {
+            let fieldoverlay = fieldoverlays[i];
+            fieldoverlay.style.display = "block";
+        }
+        for (let i=0; i < fieldvals.length; i++) {
+            let fieldval = fieldvals[i];
+            fieldval.style.display = "block";
+        }
+        for (let i=0; i < fieldinputs.length; i++) {
+            let fieldinput = fieldinputs[i];
+            fieldinput.style.display = "none";
+        }
+    }
+
     document.addEventListener("click", function(e) {
-        if (!e.target.matches(".popup-edit-link")) {
+        if (e.target.matches(".field-overlay-edit")) {
+            e.preventDefault();
+
+            hideAllEdits();
+
+            let td = e.target.parentNode.parentNode;
+            let fieldval = td.querySelector(".field-val");
+            let fieldinput = td.querySelector(".field-input");
+            let fieldoverlay = td.querySelector(".field-overlay");
+
+            fieldoverlay.style.display = "none";
+            fieldval.style.display = "none";
+            fieldinput.style.display = "block";
+            fieldinput.querySelector(".input").focus();
             return;
         }
-        let editLink = e.target;
-        let td = e.target.parentNode.parentNode;
 
-        if (editLink.innerText == "Edit") {
-            editLink.innerText = "Done";
-            td.querySelector(".card-valinput").style.display = "block";
-            td.querySelector(".card-valtext").style.display = "none";
+        if (e.target.matches(".field-input-action")) {
+            e.preventDefault();
+            let td = e.target.parentNode.parentNode.parentNode;
+            let fieldval = td.querySelector(".field-val");
+            let fieldinput = td.querySelector(".field-input");
+            let fieldoverlay = td.querySelector(".field-overlay");
 
-            td.querySelector(".card-valinput input").focus();
-        } else {
-            editLink.innerText = "Edit";
-            td.querySelector(".card-valinput").style.display = "none";
-            td.querySelector(".card-valtext").style.display = "block";
+            fieldoverlay.style.display = "block";
+            fieldval.style.display = "block";
+            fieldinput.style.display = "none";
+            return;
         }
+
     });
 </script>
 </body>
