@@ -54,7 +54,7 @@
 </head>
 <body>
 <div id="main" class="is-size-6">
-    <div class="card">
+    <form id="empform" class="card">
         <div class="card-content">
             <div class="media">
                 <div class="media-left">
@@ -87,10 +87,10 @@
                                 <td class="card-val">
                                     <div class="field-val">9029-664</div>
                                     <div class="field-input">
-                                        <input class="input is-small" type="text" value="9029-664">
+                                        <input name="empno" class="input is-small" type="text" value="9029-664">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action">Update</a>
+                                            <a class="button is-small is-success field-input-action field-input-action-update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -104,7 +104,7 @@
                                 <td class="card-val">
                                     <div class="field-val">789-01-2345</div>
                                     <div class="field-input">
-                                        <input class="input is-small" type="text" value="789-01-2345">
+                                        <input name="ssno" class="input is-small" type="text" value="789-01-2345">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
                                             <a class="button is-small is-success field-input-action">Update</a>
@@ -120,7 +120,7 @@
                                 <td class="card-val">
                                     <div class="field-val">1234567890</div>
                                     <div class="field-input">
-                                        <input class="input is-small" type="text" value="1234567890">
+                                        <input name="tin" class="input is-small" type="text" value="1234567890">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
                                             <a class="button is-small is-success field-input-action">Update</a>
@@ -136,7 +136,7 @@
                                 <td class="card-val">
                                     <div class="field-val">Intern</div>
                                     <div class="field-input">
-                                        <input class="input is-small" type="text" value="Intern">
+                                        <input name="title" class="input is-small" type="text" value="Intern">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
                                             <a class="button is-small is-success field-input-action">Update</a>
@@ -152,7 +152,7 @@
                                 <td class="card-val">
                                     <div class="field-val">2017-01-15</div>
                                     <div class="field-input">
-                                        <input class="input is-small" type="text" value="2017-01-15">
+                                        <input name="startdate" class="input is-small" type="text" value="2017-01-15">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
                                             <a class="button is-small is-success field-input-action">Update</a>
@@ -168,7 +168,7 @@
                                 <td class="card-val">
                                     <div class="field-val">Regular</div>
                                     <div class="field-input">
-                                        <input class="input is-small" type="text" value="Regular">
+                                        <input name="status" class="input is-small" type="text" value="Regular">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
                                             <a class="button is-small is-success field-input-action">Update</a>
@@ -184,7 +184,7 @@
                                 <td class="card-val">
                                     <div class="field-val">HR</div>
                                     <div class="field-input">
-                                        <input class="input is-small" type="text" value="HR">
+                                        <input name="division" class="input is-small" type="text" value="HR">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
                                             <a class="button is-small is-success field-input-action">Update</a>
@@ -202,7 +202,7 @@
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor lobortis consectetur nec nec ipsum. Suspendisse vehicula ornare efficitur. Proin nec libero leo. Integer neque metus, pharetra eget augue vitae, pharetra ultrices lacus.
                                     </div>
                                     <div class="field-input">
-                                        <textarea class="input textarea is-small" rows="5">
+                                        <textarea name="notes" class="input textarea is-small" rows="5">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor lobortis consectetur nec nec ipsum. Suspendisse vehicula ornare efficitur. Proin nec libero leo. Integer neque metus, pharetra eget augue vitae, pharetra ultrices lacus.
                                         </textarea>
                                         <div class="buttons is-pulled-right">
@@ -229,7 +229,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                                 <td class="card-val">
                                     <div class="field-val"><a>robdelacruz@email.com</a></div>
                                     <div class="field-input">
-                                        <input class="input is-small" type="text" value="robdelacruz@email.com">
+                                        <input name="email" class="input is-small" type="text" value="robdelacruz@email.com">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
                                             <a class="button is-small is-success field-input-action">Update</a>
@@ -245,7 +245,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                                 <td class="card-val">
                                     <div class="field-val">632-532-2870</div>
                                     <div class="field-input">
-                                        <input class="input is-small" type="text" value="632-532-2870">
+                                        <input name="workphone" class="input is-small" type="text" value="632-532-2870">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
                                             <a class="button is-small is-success field-input-action">Update</a>
@@ -261,7 +261,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                                 <td class="card-val">
                                     <div class="field-val">0917-567-8901</div>
                                     <div class="field-input">
-                                        <input class="input is-small" type="text" value="0917-567-8901">
+                                        <input name="mobile" class="input is-small" type="text" value="0917-567-8901">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
                                             <a class="button is-small is-success field-input-action">Update</a>
@@ -286,7 +286,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                                 <td class="card-val">
                                     <div class="field-val">Male</div>
                                     <div class="field-input">
-                                        <input class="input is-small" type="text" value="Male">
+                                        <input name="gender" class="input is-small" type="text" value="Male">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
                                             <a class="button is-small is-success field-input-action">Update</a>
@@ -302,7 +302,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                                 <td class="card-val">
                                     <div class="field-val">Single</div>
                                     <div class="field-input">
-                                        <input class="input is-small" type="text" value="Single">
+                                        <input name="civilstatus" class="input is-small" type="text" value="Single">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
                                             <a class="button is-small is-success field-input-action">Update</a>
@@ -318,7 +318,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                                 <td class="card-val">
                                     <div class="field-val">1970-01-01</div>
                                     <div class="field-input">
-                                        <input class="input is-small" type="text" value="1970-01-01">
+                                        <input name="birthdate" class="input is-small" type="text" value="1970-01-01">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
                                             <a class="button is-small is-success field-input-action">Update</a>
@@ -334,7 +334,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                                 <td class="card-val">
                                     <div class="field-val">Fuchsia</div>
                                     <div class="field-input">
-                                        <input class="input is-small" type="text" value="Fuchsia">
+                                        <input name="favoritecolor" class="input is-small" type="text" value="Fuchsia">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
                                             <a class="button is-small is-success field-input-action">Update</a>
@@ -375,7 +375,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
             <div class="content">
             </div>
         </div>
-    </div>
+    </form>
 </div>
 <script>
     // Hide any visible in-place editing fields.
@@ -422,6 +422,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
             let fieldval = td.querySelector(".field-val");
             let fieldinput = td.querySelector(".field-input");
             let fieldoverlay = td.querySelector(".field-overlay");
+
+            let emp = {};
+            if (e.target.matches(".field-input-action-update")) {
+                let els = document.querySelector("#empform").elements;
+                for (let i=0; i < els.length; i++) {
+                    let el = els[i];
+                    emp[el.name] = el.value;
+                }
+                console.log(emp);
+            }
 
             fieldoverlay.style.display = "block";
             fieldval.style.display = "block";
