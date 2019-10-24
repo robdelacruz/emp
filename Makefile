@@ -6,8 +6,8 @@ all: empd
 dep:
 	go get -u github.com/mattn/go-sqlite3
 
-empd: empd.go
-	go build -o empd empd.go
+empd: empd.go db.go
+	go build -o empd empd.go db.go
 
 clean:
 	rm -rf empd
