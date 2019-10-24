@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="bulma.css">
 <style>
 #main {
-    width: 40%;
+    max-width: 800px;
 }
 .card-label {
     width: 8em;
@@ -54,7 +54,7 @@
 </head>
 <body>
 <div id="main" class="is-size-6">
-    <form id="empform" class="card">
+    <form name="emp" class="card" itemid="123">
         <div class="card-content">
             <div class="media">
                 <div class="media-left">
@@ -90,7 +90,7 @@
                                         <input name="empno" class="input is-small" type="text" value="9029-664">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action field-input-action-update">Update</a>
+                                            <a class="button is-small is-success field-input-action update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -107,7 +107,7 @@
                                         <input name="ssno" class="input is-small" type="text" value="789-01-2345">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action">Update</a>
+                                            <a class="button is-small is-success field-input-action update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -123,7 +123,7 @@
                                         <input name="tin" class="input is-small" type="text" value="1234567890">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action">Update</a>
+                                            <a class="button is-small is-success field-input-action update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -139,7 +139,7 @@
                                         <input name="title" class="input is-small" type="text" value="Intern">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action">Update</a>
+                                            <a class="button is-small is-success field-input-action update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -155,7 +155,7 @@
                                         <input name="startdate" class="input is-small" type="text" value="2017-01-15">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action">Update</a>
+                                            <a class="button is-small is-success field-input-action update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -171,7 +171,7 @@
                                         <input name="status" class="input is-small" type="text" value="Regular">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action">Update</a>
+                                            <a class="button is-small is-success field-input-action update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -187,7 +187,7 @@
                                         <input name="division" class="input is-small" type="text" value="HR">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action">Update</a>
+                                            <a class="button is-small is-success field-input-action update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -202,12 +202,10 @@
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor lobortis consectetur nec nec ipsum. Suspendisse vehicula ornare efficitur. Proin nec libero leo. Integer neque metus, pharetra eget augue vitae, pharetra ultrices lacus.
                                     </div>
                                     <div class="field-input">
-                                        <textarea name="notes" class="input textarea is-small" rows="5">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor lobortis consectetur nec nec ipsum. Suspendisse vehicula ornare efficitur. Proin nec libero leo. Integer neque metus, pharetra eget augue vitae, pharetra ultrices lacus.
-                                        </textarea>
+                                        <textarea name="notes" class="input textarea is-small" rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor lobortis consectetur nec nec ipsum. Suspendisse vehicula ornare efficitur. Proin nec libero leo. Integer neque metus, pharetra eget augue vitae, pharetra ultrices lacus.</textarea>
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action">Update</a>
+                                            <a class="button is-small is-success field-input-action update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -232,7 +230,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                                         <input name="email" class="input is-small" type="text" value="robdelacruz@email.com">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action">Update</a>
+                                            <a class="button is-small is-success field-input-action update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -248,7 +246,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                                         <input name="workphone" class="input is-small" type="text" value="632-532-2870">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action">Update</a>
+                                            <a class="button is-small is-success field-input-action update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -264,7 +262,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                                         <input name="mobile" class="input is-small" type="text" value="0917-567-8901">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action">Update</a>
+                                            <a class="button is-small is-success field-input-action update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -289,7 +287,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                                         <input name="gender" class="input is-small" type="text" value="Male">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action">Update</a>
+                                            <a class="button is-small is-success field-input-action update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -302,10 +300,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                                 <td class="card-val">
                                     <div class="field-val">Single</div>
                                     <div class="field-input">
-                                        <input name="civilstatus" class="input is-small" type="text" value="Single">
+                                        <div class="select">
+                                            <select name="civilstatus" class="input is-small">
+                                                <option>Single</option>
+                                                <option>Married</option>
+                                            </select>
+                                        </div>
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action">Update</a>
+                                            <a class="button is-small is-success field-input-action update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -321,7 +324,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                                         <input name="birthdate" class="input is-small" type="text" value="1970-01-01">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action">Update</a>
+                                            <a class="button is-small is-success field-input-action update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -337,7 +340,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                                         <input name="favoritecolor" class="input is-small" type="text" value="Fuchsia">
                                         <div class="buttons is-pulled-right">
                                             <a class="button is-small is-light field-input-action">Cancel</a>
-                                            <a class="button is-small is-success field-input-action">Update</a>
+                                            <a class="button is-small is-success field-input-action update">Update</a>
                                         </div>
                                     </div>
                                     <div class="field-overlay">
@@ -378,6 +381,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
     </form>
 </div>
 <script>
+    let empfrm = document.querySelector("[name='emp']");
+    let empid = empfrm.getAttribute("itemid");
+    let baseSvcUri = `/emp/${empid}`;
+
     // Hide any visible in-place editing fields.
     function hideAllEdits() {
         let fieldoverlays = document.querySelectorAll(".field-overlay");
@@ -424,16 +431,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
             let fieldoverlay = td.querySelector(".field-overlay");
 
             let emp = {};
-            if (e.target.matches(".field-input-action-update")) {
-                let els = document.querySelector("#empform").elements;
-                for (let i=0; i < els.length; i++) {
-                    let el = els[i];
-                    if (el.name == "") {
-                        continue;
-                    }
-                    emp[el.name] = el.value;
+            if (e.target.matches(".update")) {
+                let inputCtrl = fieldinput.querySelector(".input");
+                let fieldName = inputCtrl.name;
+                let fieldVal = escape(inputCtrl.value);
+                if (inputCtrl.tagName == "SELECT") {
+                    fieldVal = inputCtrl.selectedIndex;
                 }
-                console.log(emp);
+                let endp = `${baseSvcUri}?${fieldName}=${fieldVal}`;
+                console.log(endp);
             }
 
             fieldoverlay.style.display = "block";
