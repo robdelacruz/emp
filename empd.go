@@ -107,15 +107,14 @@ func rootHandler(db *sql.DB) func(http.ResponseWriter, *http.Request) {
 }
 
 func empHandler(db *sql.DB) func(http.ResponseWriter, *http.Request) {
+
 	return func(w http.ResponseWriter, r *http.Request) {
 		defer r.Body.Close()
 
 		switch r.Method {
 		case "PUT":
 			r.ParseForm()
-			for k, v := range r.Form {
-				fmt.Fprintf(w, "%s: %s\n", k, v)
-			}
+			updateEmp(db, 1, r.Form)
 
 			w.WriteHeader(http.StatusOK)
 		}

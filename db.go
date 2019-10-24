@@ -3,8 +3,10 @@ package main
 import (
 	"database/sql"
 	"fmt"
+	"net/url"
 	"os"
 	"path/filepath"
+	"strings"
 
 	_ "github.com/mattn/go-sqlite3"
 )
@@ -35,4 +37,37 @@ func openDB(switches map[string]string) (*sql.DB, error) {
 }
 
 func ensureCreateTables(db *sql.DB) {
+	sqlstr := `PRAGMA foreign_keys = ON;
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS emp (empid INTEGER PRIMARY KEY NOT NULL, userid INTEGER, empno TEXT, firstname TEXT, lastname TEXT, title TEXT);
+INSERT OR REPLACE INTO emp (empid, empno, firstname, lastname, title) VALUES (1, '123', 'Oscar', 'the Grouch', 'Actor');
+END TRANSACTION;`
+	_, err := db.Exec(sqlstr)
+	if err != nil {
+		panic(err)
+	}
+}
+
+func updateEmp(db *sql.DB, empid int64, vals url.Values) {
+	empFields := []string{"empno", "firstname", "lastname", "title"}
+
+	ss := []string{}
+	for k, v := range vals {
+		if listContains(empFields, k) {
+			ss = append(ss, fmt.Sprintf("%s = '%s'", k, v[0]))
+		}
+	}
+	if len(ss) == 0 {
+		return
+	}
+
+	setClause := strings.Join(ss, ", ")
+	sqlstr := fmt.Sprintf("UPDATE emp SET %s WHERE empid = %d", setClause, empid)
+	fmt.Printf("updateEmp():\n%s\n", sqlstr)
+
+	_, err := db.Exec(sqlstr)
+	if err != nil {
+		panic(err)
+	}
+
 }
