@@ -428,6 +428,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
                 let els = document.querySelector("#empform").elements;
                 for (let i=0; i < els.length; i++) {
                     let el = els[i];
+                    if (el.name == "") {
+                        continue;
+                    }
                     emp[el.name] = el.value;
                 }
                 console.log(emp);

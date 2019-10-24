@@ -14,4 +14,9 @@ display employee page:
 - Able to edit fields in place. Click on field 'Edit' button, an input control appears, then 'Save'.
 - Only admin can edit employee profile.
 
+API
+---
+PUT /emp/1 {id:1, empno:"123", firstname:"Rob", lastname:"de la Cruz"}
+PUT /emp/1?firstname="Rob"
+PUT /emp/1?firstname="Rob"&empno="123"
 
