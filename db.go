@@ -3,7 +3,6 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	"net/url"
 	"os"
 	"path/filepath"
 	"strings"
@@ -48,28 +47,60 @@ END TRANSACTION;`
 	}
 }
 
-func updateEmp(db *sql.DB, empid int64, vals url.Values) {
-	empFields := []string{"empno", "firstname", "lastname", "title"}
+type Emp struct {
+	EmpId     int64  `json:"empid"`
+	UserId    int64  `json:"userid"`
+	Empno     string `json:"empno"`
+	Firstname string `json:"firstname"`
+	Lastname  string `json:"lastname"`
+	Title     string `json:"title"`
+}
+
+func (emp Emp) String() string {
+	return fmt.Sprintf(`
+EmpId:     %d
+UserId:    %d
+Empno:     %s
+Firstname: %s
+Lastname:  %s
+Title:     %s
+`, emp.EmpId, emp.UserId, emp.Empno, emp.Firstname, emp.Lastname, emp.Title)
+}
+
+func updateEmp(db *sql.DB, empId int64, emp *Emp) error {
+	sqlstr := "UPDATE emp set userid = ?, empno = ?, firstname = ?, lastname = ?, title = ? WHERE empid = ?"
+	fmt.Printf("updateEmp():\n%s\n", sqlstr)
+	stmt, _ := db.Prepare(sqlstr)
+	_, err := stmt.Exec(emp.UserId, emp.Empno, emp.Firstname, emp.Lastname, emp.Title, empId)
+	if err != nil {
+		return fmt.Errorf("updateEmp() -\n%v\n(%s)\n", emp, err)
+	}
+	return nil
+}
+
+func updateEmpFields(db *sql.DB, empId int64, fields map[string]interface{}) error {
+	validFields := []string{"empno", "userid", "firstname", "lastname", "title"}
 
 	ss := []string{}
 	vv := [](interface{}){}
-	for k, v := range vals {
-		if listContains(empFields, k) {
+	for k, v := range fields {
+		if inList(validFields, k) {
 			ss = append(ss, fmt.Sprintf("%s = ?", k))
-			vv = append(vv, v[0])
+			vv = append(vv, v)
 		}
 	}
 	if len(ss) == 0 {
-		return
+		return nil
 	}
+	vv = append(vv, empId)
 
 	setClause := strings.Join(ss, ", ")
-	sqlstr := fmt.Sprintf("UPDATE emp SET %s WHERE empid = %d", setClause, empid)
-	fmt.Printf("updateEmp():\n%s\n", sqlstr)
+	sqlstr := fmt.Sprintf("UPDATE emp SET %s WHERE empid = ?", setClause)
+	fmt.Printf("updateEmpFields():\n%s\n", sqlstr)
 
 	_, err := db.Exec(sqlstr, vv...)
 	if err != nil {
-		panic(err)
+		return err
 	}
-
+	return nil
 }
