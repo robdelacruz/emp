@@ -52,9 +52,11 @@ func updateEmp(db *sql.DB, empid int64, vals url.Values) {
 	empFields := []string{"empno", "firstname", "lastname", "title"}
 
 	ss := []string{}
+	vv := [](interface{}){}
 	for k, v := range vals {
 		if listContains(empFields, k) {
-			ss = append(ss, fmt.Sprintf("%s = '%s'", k, v[0]))
+			ss = append(ss, fmt.Sprintf("%s = ?", k))
+			vv = append(vv, v[0])
 		}
 	}
 	if len(ss) == 0 {
@@ -65,7 +67,7 @@ func updateEmp(db *sql.DB, empid int64, vals url.Values) {
 	sqlstr := fmt.Sprintf("UPDATE emp SET %s WHERE empid = %d", setClause, empid)
 	fmt.Printf("updateEmp():\n%s\n", sqlstr)
 
-	_, err := db.Exec(sqlstr)
+	_, err := db.Exec(sqlstr, vv...)
 	if err != nil {
 		panic(err)
 	}
