@@ -17,6 +17,9 @@
 a.navbar-item.is-active {
     font-weight: bold;
 }
+.icon_online {
+    margin-right: 0.5em;
+}
 hr {
     margin: 0;
 }
@@ -81,14 +84,17 @@ hr {
         <div class="navbar-start">
             <div class="navbar-brand">
                 <a class="navbar-item" href="#">
-                    <img src="carnet.png" alt="carnet">
+                    <img src="coffee1.png" alt="coffee">
                 </a>
             </div>
             <a class="navbar-item">Request</a>
             <a class="navbar-item">Pending Items</a>
         </div>
         <div class="navbar-end">
-            <a class="navbar-item is-active">Rob de la Cruz</a>
+            <div class="navbar-item is-active">
+                <img class="icon_online" src="card.svg" alt="business card">
+                <a href="#">Rob de la Cruz</a>
+            </div>
             <div class="navbar-item">
                 <div class="buttons">
                     <a class="button is-primary is-small">Register</a>
@@ -474,8 +480,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor
         </div>
     </form>
 </div>
-<p style="margin: 5em 0 0 2em;" class="has-text-left is-size-7 has-text-grey-light">Icons made by <a class="has-text-grey-light" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a class="has-text-grey-light" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-</p>
 <script>
     let empfrm = document.querySelector("[name='emp']");
     let empid = empfrm.getAttribute("itemid");
