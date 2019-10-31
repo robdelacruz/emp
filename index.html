@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login</title>
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="stylesheet" href="bulma.css">
+<style>
+</style>
+</head>
+<body>
+    <nav class="navbar has-shadow">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="cattech2.png">
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <small>CatTech HRMS</small>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-link">
+                        Rob de la Cruz
+                    </div>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            Sign Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="columns">
+            <div class="column is-2-desktop">
+                <nav class="menu is-size-7">
+                    <p class="menu-label">
+                        Menu
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <a class="is-active" href="#">View Employees</a>
+                        </li>
+                        <li>
+                            <a class="" href="#">View Requests</a>
+                        </li>
+                        <li>
+                            <a class="" href="#">Add Employee</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="column">
+                <nav class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <h1 class="title">Employees</h1>
+                        </div>
+                        <div class="level-item">
+                            <div class="field has-addons">
+                                <p class="control">
+                                    <input class="input" type="text" placeholder="Employee Name or Number...">
+                                <p>
+                                <p class="control">
+                                    <button class="button">Search</button>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="level-item">
+                            Order by
+                        </div>
+                        <div class="level-item">
+                            <div class="select">
+                                <select>
+                                    <option>Name</option>
+                                    <option>Emp No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="level-right">
+                        <div class="level-item">
+                            View as
+                        </div>
+                        <div class="level-item">
+                            <div class="select">
+                                <select>
+                                    <option>Card</option>
+                                    <option selected>Table</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <table class="table is-fullwidth is-hoverable2 is-size-6">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Emp No</th>
+                            <th>Title</th>
+                            <th>Division</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rob de la Cruz</td>
+                            <td>9029-664</td>
+                            <td>Intern</td>
+                            <td>HR</td>
+                            <td><a href="empcard_edit_inplace.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Lee Kuan Yew</td>
+                            <td>1234-567</td>
+                            <td>Minister Mentor</td>
+                            <td>HR</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bill Gates</td>
+                            <td>2222-345</td>
+                            <td>Programmer</td>
+                            <td>Accounting</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Cena</td>
+                            <td>0001-123</td>
+                            <td>Trainee</td>
+                            <td>IT</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Randy Savage</td>
+                            <td>0002-123</td>
+                            <td>Junior Developer</td>
+                            <td>Development</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Hulk Hogan</td>
+                            <td>0003-567</td>
+                            <td>Senior Developer</td>
+                            <td>Development</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Rob de la Cruz</td>
+                            <td>9029-664</td>
+                            <td>Intern</td>
+                            <td>HR</td>
+                            <td><a href="empcard_edit_inplace.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Lee Kuan Yew</td>
+                            <td>1234-567</td>
+                            <td>Minister Mentor</td>
+                            <td>HR</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bill Gates</td>
+                            <td>2222-345</td>
+                            <td>Programmer</td>
+                            <td>Accounting</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Cena</td>
+                            <td>0001-123</td>
+                            <td>Trainee</td>
+                            <td>IT</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Randy Savage</td>
+                            <td>0002-123</td>
+                            <td>Junior Developer</td>
+                            <td>Development</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Hulk Hogan</td>
+                            <td>0003-567</td>
+                            <td>Senior Developer</td>
+                            <td>Development</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Rob de la Cruz</td>
+                            <td>9029-664</td>
+                            <td>Intern</td>
+                            <td>HR</td>
+                            <td><a href="empcard_edit_inplace.html">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Lee Kuan Yew</td>
+                            <td>1234-567</td>
+                            <td>Minister Mentor</td>
+                            <td>HR</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bill Gates</td>
+                            <td>2222-345</td>
+                            <td>Programmer</td>
+                            <td>Accounting</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Cena</td>
+                            <td>0001-123</td>
+                            <td>Trainee</td>
+                            <td>IT</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Randy Savage</td>
+                            <td>0002-123</td>
+                            <td>Junior Developer</td>
+                            <td>Development</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Hulk Hogan</td>
+                            <td>0003-567</td>
+                            <td>Senior Developer</td>
+                            <td>Development</td>
+                            <td><a href="#">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

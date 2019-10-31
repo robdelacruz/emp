@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>View Employee</title>
+<link rel="stylesheet" type="text/css" href="bulma.css">
+<style>
+.section {
+    padding-top: 1rem;
+}
+.card-label {
+    width: 8em;
+    color: #7a7a7a;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar has-shadow">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="cattech2.png">
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <small>CatTech HRMS</small>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-link">
+                        Rob de la Cruz
+                    </div>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            Sign Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="columns">
+            <div class="column is-2-desktop">
+                <nav class="menu is-size-7">
+                    <p class="menu-label">
+                        Menu
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <a class="is-active" href="#">View Employees</a>
+                        </li>
+                        <li>
+                            <a class="" href="#">View Requests</a>
+                        </li>
+                        <li>
+                            <a class="" href="#">Add Employee</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="column is-6-desktop">
+                <nav class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <h1 class="title">Employee Profile</h1>
+                        </div>
+                        <div class="level-item">
+                            <p class="control">
+                                <button class="button is-primary">Edit</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <div class="level-item">
+                            View
+                        </div>
+                        <div class="level-item">
+                            <div class="select">
+                                <select>
+                                    <option selected>Full</option>
+                                    <option>Summary</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <article class="box">
+                    <div class="media">
+                        <aside class="media-left">
+                            <img src="rob_fb.jpg" alt="alt caption here">
+                        </aside>
+                        <div class="media-content content is-small">
+                            <h1 class="title is-5 is-spaced is-marginless">
+                                Rob de la Cruz
+                            </h1>
+                            <p class="subtitle is-marginless">
+                                Intern
+                            </p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="is-size-7" colspan="2">Employee Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="card-label">Emp&nbsp;No</td>
+                                        <td>9029-664</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-label">SS&nbsp;No</td>
+                                        <td>789-01-2345</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-label">TIN</td>
+                                        <td>1234567890</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-label">Title</td>
+                                        <td>Intern</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-label">Start&nbsp;Date</td>
+                                        <td>2017-01-15</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-label">Status</td>
+                                        <td>Regular</td></tr>
+                                    <tr>
+                                        <td class="card-label">Division</td>
+                                        <td>HR</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-label">Notes</td>
+                                        <td>
+                                            <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in odio at tortor lobortis consectetur nec nec ipsum. Suspendisse vehicula ornare efficitur. Proin nec libero leo. Integer neque metus, pharetra eget augue vitae, pharetra ultrices lacus.
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="is-size-7" colspan="2">Contact Info</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="card-label">Email</td>
+                                        <td><a>robdelacruz@email.com</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-label">Work&nbsp;Phone</td>
+                                        <td>632-532-2870</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-label">Mobile</td>
+                                        <td>0917-567-8901</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="is-size-7" colspan="2">Personal Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="card-label">Gender</td>
+                                        <td>Male</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-label">Civil Status</td>
+                                        <td>Single</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-label">Date of Birth</td>
+                                        <td>1970-01-01</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-label">Favorite Color</td>
+                                        <td>Fuchsia</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="is-size-7" colspan="2">Balances</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="card-label">Remaining SL</td>
+                                        <td>15.0 <a href="#" class="is-pulled-right">Request</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="card-label">Remaining VL</td>
+                                        <td>12.5 <a href="#" class="is-pulled-right">Request</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
