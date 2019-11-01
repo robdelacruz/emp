@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edit Employee</title>
+<link rel="stylesheet" type="text/css" href="bulma.css">
+<style>
+.section {
+    padding-top: 1rem;
+}
+.card-label {
+    width: 8em;
+    color: #7a7a7a;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar has-shadow">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="cattech2.png">
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <small>CatTech HRMS</small>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-link">
+                        Rob de la Cruz
+                    </div>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            Sign Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="columns">
+            <div class="column is-2-desktop">
+                <nav class="menu is-size-7">
+                    <p class="menu-label">
+                        Menu
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <a class="is-active" href="#">View Employees</a>
+                        </li>
+                        <li>
+                            <a class="" href="#">View Requests</a>
+                        </li>
+                        <li>
+                            <a class="" href="#">Add Employee</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="column is-6-desktop">
+                <nav class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <nav class="breadcrumb">
+                                <ul>
+                                    <li>
+                                        <a href="#">Employees</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Rob de la Cruz</a>
+                                    </li>
+                                    <li class="is-active">
+                                        <a href="#">Edit</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="level-item">
+                            <p class="control buttons">
+                                <button class="button is-primary is-small">Save</button>
+                                <a class="button is-small" href="#">Cancel</a>
+                            </p>
+                        </div>
+                    </div>
+                </nav>
+                <form class="box">
+                    <div class="columns is-desktop">
+                        <div class="column">
+                            <label class="label">First Name</label>
+                            <input class="input is-small" type="text" value="Rob">
+                        </div>
+                        <div class="column">
+                            <label class="label">Middle Name</label>
+                            <input class="input is-small" type="text" value="Y.">
+                        </div>
+                        <div class="column">
+                            <label class="label">Last Name</label>
+                            <input class="input is-small" type="text" value="de la Cruz">
+                        </div>
+                    </div>
+                    <div class="columns is-desktop">
+                        <div class="column is-6-desktop">
+                            <div class="field">
+                                <label class="label">Employee Number</label>
+                                <input class="input is-small" type="text" placeholder="Ex. 001" required value="9029-664">
+                            </div>
+                            <div class="field">
+                                <label class="label">Title</label>
+                                <input class="input is-small" type="text" placeholder="" value="Intern">
+                            </div>
+                            <div class="field">
+                                <label class="label">SS No</label>
+                                <input class="input is-small" type="text" placeholder="" value="12345">
+                            </div>
+                            <div class="field">
+                                <label class="label">Hire Date</label>
+                                <input class="input is-small" type="date" placeholder="" value="2017-01-15">
+                            </div>
+                            <div class="field">
+                                <label class="label">Division</label>
+                                <input class="input is-small" type="text" placeholder="" value=HR">
+                            </div>
+                            <div class="field">
+                                <label class="label">Employment Status</label>
+                                <div class="select">
+                                    <select>
+                                        <option>Probationary</option>
+                                        <option selected>Regular</option>
+                                        <option>Contractual</option>
+                                        <option>Alumni</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6-desktop">
+                            <div class="field">
+                                <label class="label">Picture</label>
+                                <div class="control">
+                                    <div class="file has-name">
+                                        <label class="file-label">
+                                            <input class="file-input" type="file">
+                                            <span class="file-cta">
+                                                <span class="file-label">
+                                                    Choose image file...
+                                                </span>
+                                            </span>
+                                            <span class="file-name">
+                                                No file chosen
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
